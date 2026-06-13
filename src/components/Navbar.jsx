@@ -5,11 +5,12 @@ import contact from "../assets/contact.png";
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 z-50 flex items-center justify-between px-14 py-8">
+    <nav className="sticky top-0 z-50 flex items-center justify-between px-16 py-4 bg-gray-900">
       <Link
         to="home"
         smooth={true}
         duration={500}
+        spy={true}
         className="cursor-pointer transition-transform hover:scale-105"
       >
         <img
@@ -24,6 +25,7 @@ const Navbar = () => {
           to="home"
           smooth={true}
           duration={500}
+          spy={true}
           className="cursor-pointer border-b-4 border-transparent text-gray-300 pb-1 transition-all duration-300 ease-in-out hover:text-yellow-300 hover:border-yellow-300 active:text-yellow-300 active:border-yellow-300"
         >
           Home
@@ -32,6 +34,8 @@ const Navbar = () => {
           to="about"
           smooth={true}
           duration={500}
+          offset={-16}
+          spy={true}
           className="cursor-pointer border-b-4 border-transparent text-gray-300 pb-1 transition-all duration-300 ease-in-out hover:text-yellow-300 hover:border-yellow-300 active:text-yellow-300 active:border-yellow-300"
         >
           About
@@ -40,6 +44,8 @@ const Navbar = () => {
           to="skills"
           smooth={true}
           duration={500}
+          offset={-16}
+          spy={true}
           className="cursor-pointer border-b-4 border-transparent text-gray-300 pb-1 transition-all duration-300 ease-in-out hover:text-yellow-300 hover:border-yellow-300 active:text-yellow-300 active:border-yellow-300"
         >
           Skills
@@ -48,6 +54,8 @@ const Navbar = () => {
           to="projects"
           smooth={true}
           duration={500}
+          offset={-16}
+          spy={true}
           className="cursor-pointer border-b-4 border-transparent text-gray-300 pb-1 transition-all duration-300 ease-in-out hover:text-yellow-300 hover:border-yellow-300 active:text-yellow-300 active:border-yellow-300"
         >
           Projects
@@ -67,7 +75,7 @@ const Navbar = () => {
               alt="contact-me-btn"
               className="w-5 h-5 object-cover"
             />
-            <span>Contact me</span>
+            <span className="font-semibold">Contact me</span>
           </Link>
         </button>
       </div>
