@@ -19,7 +19,7 @@ const projectsData = [
     demo_link: "https://imrohittsingh-rs.github.io/TypeMaster/",
   },
   {
-    title: "Shortly",
+    title: "SquishUrl",
     description:
       "A URL shortening service that allows users to create short links from long URLs. It provides analytics on link usage and allows users to manage their shortened URLs. Uses jwt for authentication and authorization.",
     tags: [
@@ -30,8 +30,8 @@ const projectsData = [
       { name: "NodeJS", color: "text-orange-300" },
     ],
     image: shortlyImage,
-    source_code_link: "https://github.com/imrohittsingh-rs/shortly",
-    demo_link: "",
+    source_code_link: "https://github.com/imrohittsingh-rs/squishurl",
+    demo_link: "https://squishurl.vercel.app/",
   },
   {
     title: "Blogify",
