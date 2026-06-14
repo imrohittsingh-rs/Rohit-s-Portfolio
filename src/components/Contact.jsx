@@ -11,7 +11,7 @@ import resumePdf from "../assets/rohit_resume.pdf";
 
 const socials = [
   {
-    href: "",
+    href: "mailto:imrohittsingh@gmail.com",
     logo: <FaEnvelope />,
     label: "Email",
     color: "from-pink-500 to-red-500",
@@ -35,7 +35,7 @@ const socials = [
     color: "from-gray-600 to-gray-900",
   },
   {
-    href: { resumePdf },
+    href: resumePdf,
     logo: <FaEye />,
     label: "Resume",
     color: "from-green-400 to-emerald-600",
