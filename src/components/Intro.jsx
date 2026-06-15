@@ -22,7 +22,7 @@ const Intro = () => {
               I'm <span className="text-yellow-400">Rohit</span>
             </h1>
             <h2 className="text-3xl md:text-5xl font-bold text-gray-300">
-              Web Developer
+              Full Stack Developer
             </h2>
           </div>
 
@@ -70,7 +70,7 @@ const Intro = () => {
             <img
               src={pfp}
               alt="profile-pic"
-              className="w-full h-full object-cover object-top rounded-full border-2 border-yellow-400 shadow-lg shadow-yellow-400/20 transition-transform duration-300 hover:scale-105 drop-shadow-[0_0_30px_rgba(250,204,21,0.3)]"
+              className="w-full h-full object-cover rounded-full border-2 border-yellow-400 shadow-lg shadow-yellow-400/20 transition-transform duration-300 hover:scale-105 drop-shadow-[0_0_30px_rgba(250,204,21,0.3)]"
             />
           </div>
         </div>
