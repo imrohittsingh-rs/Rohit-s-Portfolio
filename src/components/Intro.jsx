@@ -15,18 +15,19 @@ const Intro = () => {
         {/* Left Side */}
         <div className="flex flex-col space-y-6 order-2 md:order-1 text-center md:text-left">
           <div className="space-y-4">
-            <h3 className="text-xl md:text-2xl font-medium text-gray-400">
+            <h3 className="text-xl md:text-2xl font-medium text-slate-500 dark:text-gray-400">
               Hello,
             </h3>
             <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight">
-              I'm <span className="text-yellow-400">Rohit</span>
+              I'm{" "}
+              <span className="text-amber-500 dark:text-yellow-400">Rohit</span>
             </h1>
-            <h2 className="text-3xl md:text-5xl font-bold text-gray-300">
+            <h2 className="text-3xl md:text-5xl font-bold text-slate-700 dark:text-gray-300">
               Full Stack Developer
             </h2>
           </div>
 
-          <p className="text-gray-400 text-base md:text-lg max-w-xl leading-relaxed">
+          <p className="text-slate-600 dark:text-gray-400 text-base md:text-lg max-w-xl leading-relaxed">
             A B.Tech student in Computer Science at USICT, GGSIPU. I'm
             passionate about Full-Stack Web Development and have experience in
             building scalable applications using the MERN stack.
@@ -46,7 +47,7 @@ const Intro = () => {
                 duration: 0.5,
                 ease: "easeOut",
               }}
-              className="bg-white text-black font-semibold rounded-full shadow-lg hover:bg-gray-100 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer"
+              className="bg-slate-900 text-white dark:bg-white dark:text-black font-semibold rounded-full shadow-lg hover:bg-slate-800 dark:hover:bg-gray-100 hover:shadow-xl hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 cursor-pointer"
             >
               <a
                 className="flex items-center gap-3 px-6 py-3"
@@ -56,7 +57,7 @@ const Intro = () => {
                 <img
                   src={resume}
                   alt="resume-icon"
-                  className="w-5 h-5 object-cover"
+                  className="w-5 h-5 object-cover dark:invert-0 invert"
                 />
                 <span>View Resume</span>
               </a>
@@ -70,7 +71,7 @@ const Intro = () => {
             <img
               src={pfp}
               alt="profile-pic"
-              className="w-full h-full object-cover rounded-full border-2 border-yellow-400 shadow-lg shadow-yellow-400/20 transition-transform duration-300 hover:scale-105 drop-shadow-[0_0_30px_rgba(250,204,21,0.3)]"
+              className="w-full h-full object-cover rounded-full border-2 border-amber-500 dark:border-yellow-400 shadow-lg shadow-amber-500/10 dark:shadow-yellow-400/20 transition-transform duration-300 hover:scale-105 drop-shadow-[0_0_30px_rgba(245,158,11,0.15)] dark:drop-shadow-[0_0_30px_rgba(250,204,21,0.3)]"
             />
           </div>
         </div>

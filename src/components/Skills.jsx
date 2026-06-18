@@ -81,9 +81,9 @@ const techStack = [
 const Skills = () => {
   return (
     <section className="font-poppins flex flex-col justify-center py-20 px-6 md:px-14" id="skills">
-      <h2 className="text-white font-extrabold text-3xl sm:text-4xl md:text-5xl text-center mb-16 tracking-tight">
+      <h2 className="text-slate-900 dark:text-white font-extrabold text-3xl sm:text-4xl md:text-5xl text-center mb-16 tracking-tight">
         🚀 My{" "}
-        <span className="text-yellow-400 drop-shadow-[0_0_15px_rgba(250,204,21,0.15)]">
+        <span className="text-amber-500 dark:text-yellow-400 drop-shadow-[0_0_15px_rgba(245,158,11,0.15)] dark:drop-shadow-[0_0_15px_rgba(250,204,21,0.15)]">
           Tech Stack
         </span>
       </h2>
@@ -92,9 +92,9 @@ const Skills = () => {
         {techStack.map((cat, idx) => (
           <div
             key={idx}
-            className="p-6 bg-gray-950/50 backdrop-blur-sm border border-gray-800/80 rounded-2xl shadow-xl hover:border-yellow-400/50 hover:shadow-[0_0_30px_rgba(250,204,21,0.05)] hover:-translate-y-1 transition-all duration-300 ease-in-out group"
+            className="p-6 bg-white dark:bg-gray-950/50 backdrop-blur-sm border border-slate-200/80 dark:border-gray-800/80 rounded-2xl shadow-xl hover:border-amber-500/50 dark:hover:border-yellow-400/50 hover:shadow-[0_0_30px_rgba(245,158,11,0.05)] dark:hover:shadow-[0_0_30px_rgba(250,204,21,0.05)] hover:-translate-y-1 transition-all duration-300 ease-in-out group"
           >
-            <h3 className="font-bold text-xl text-white tracking-wide border-b border-gray-800 pb-3 mb-4 group-hover:text-yellow-400 transition-colors duration-300 text-center">
+            <h3 className="font-bold text-xl text-slate-800 dark:text-white tracking-wide border-b border-slate-100 dark:border-gray-800 pb-3 mb-4 group-hover:text-amber-500 dark:group-hover:text-yellow-400 transition-colors duration-300 text-center">
               {cat.category}
             </h3>
 
@@ -102,7 +102,7 @@ const Skills = () => {
               {cat.items.map((ele, itemIdx) => (
                 <div
                   key={itemIdx}
-                  className="flex flex-col items-center justify-center text-center gap-2 p-4 bg-gray-900 border border-gray-800 rounded-xl text-gray-300 hover:bg-gray-800 hover:text-white hover:border-gray-700 transition-all duration-300 cursor-default group"
+                  className="flex flex-col items-center justify-center text-center gap-2 p-4 bg-slate-50 dark:bg-gray-900 border border-slate-100 dark:border-gray-800 rounded-xl text-slate-600 dark:text-gray-300 hover:bg-slate-100 dark:hover:bg-gray-800 hover:text-slate-900 dark:hover:text-white hover:border-slate-200 dark:hover:border-gray-700 transition-all duration-300 cursor-default group"
                 >
                   <span className="text-2xl transition-transform duration-300 group-hover:scale-110">
                     {ele.icon}

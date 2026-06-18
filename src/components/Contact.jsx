@@ -60,26 +60,22 @@ const Contact = () => {
           scale: 1,
           opacity: 1,
         }}
-        viewport={{ once: false, amount: 0.4 }}
-        transition={{
-          ease: "easeOut",
-          duration: 0.6,
-        }}
+        viewport={{ once: true, amount: 0.4 }}
         transition={{
           ease: "easeOut",
           duration: 0.3,
         }}
-        className="mx-auto flex flex-col justify-center items-center max-w-xl p-8 rounded-2xl bg-black/40 backdrop-blur-md border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.12)] text-white transition-all duration-300 hover:shadow-[0_8px_40px_rgba(0,0,0,0.5)]"
+        className="mx-auto flex flex-col justify-center items-center max-w-xl p-8 rounded-2xl bg-white/80 dark:bg-black/40 backdrop-blur-md border border-slate-200/80 dark:border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.06)] dark:shadow-[0_8px_30px_rgba(0,0,0,0.12)] text-slate-800 dark:text-white transition-all duration-300 hover:shadow-[0_8px_40px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_8px_40px_rgba(0,0,0,0.5)]"
       >
         <div className="flex items-center justify-center gap-4">
-          <h2 className="text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-linear-to-r from-yellow-300 to-amber-200">
+          <h2 className="text-4xl font-extrabold tracking-tight text-transparent bg-clip-text bg-linear-to-r from-yellow-600 to-amber-500 dark:from-yellow-300 dark:to-amber-200">
             Let's Connect
           </h2>
           <span className="text-4xl animate-bounce text-yellow-400 mx-1">
             <FaRocket />
           </span>
         </div>
-        <p className="text-lg text-neutral-500 my-4">
+        <p className="text-lg text-slate-500 dark:text-neutral-500 my-4">
           I'm always open to collaborations, opportunities, or just a chat!
         </p>
         <div className="flex flex-col space-y-4 w-full">
@@ -88,7 +84,7 @@ const Contact = () => {
               key={index}
               href={social.href}
               target="_blank"
-              className={`flex gap-3 items-center justify-center text-white py-3 px-4 font-medium shadow-[0_8px_30px_rgba(0,0,0,0.12)] rounded-lg bg-linear-to-r ${social.color} hover:scale-105 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] transition-all duration-300 ease-in-out`}
+              className={`flex gap-3 items-center justify-center text-white py-3 px-4 font-medium shadow-[0_8px_30px_rgba(0,0,0,0.12)] rounded-lg bg-linear-to-r ${social.color} hover:scale-105 hover:shadow-[0_4px_20px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] transition-all duration-300 ease-in-out`}
             >
               <span className="text-lg">{social.logo}</span>
               {social.label}

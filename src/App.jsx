@@ -9,7 +9,7 @@ import Projects from './components/Projects'
 
 const App = () => {
   return (
-    <div className='app bg-gray-900 w-full min-h-screen text-white'>
+    <div className='app bg-slate-50 text-slate-900 dark:bg-gray-900 w-full min-h-screen dark:text-white transition-colors duration-300'>
       <Navbar />
       <Intro />
       <Skills />

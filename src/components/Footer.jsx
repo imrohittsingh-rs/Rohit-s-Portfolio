@@ -7,30 +7,30 @@ const handles = [
   {
     href: "https://leetcode.com/u/imrohittsingh/",
     icon: <SiLeetcode />,
-    hover: "hover:text-amber-500 hover:drop-shadow-[0_0_8px_rgba(245,158,11,0.6)]",
+    hover: "hover:text-amber-600 dark:hover:text-amber-500 hover:drop-shadow-[0_0_8px_rgba(245,158,11,0.4)] dark:hover:drop-shadow-[0_0_8px_rgba(245,158,11,0.6)]",
   },
   {
     href: "https://github.com/imrohittsingh-rs",
     icon: <FaGithub />,
-    hover: "hover:text-slate-200 hover:drop-shadow-[0_0_8px_rgba(226,232,240,0.4)]",
+    hover: "hover:text-slate-800 dark:hover:text-slate-200 hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.15)] dark:hover:drop-shadow-[0_0_8px_rgba(226,232,240,0.4)]",
   },
   {
     href: "https://www.linkedin.com/in/imrohittsingh/",
     icon: <FaLinkedin />,
-    hover: "hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.6)]",
+    hover: "hover:text-blue-600 dark:hover:text-blue-500 hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.4)] dark:hover:drop-shadow-[0_0_8px_rgba(59,130,246,0.6)]",
   },
   {
     href: "https://x.com/imrohittsingh",
     icon: <FaXTwitter />,
-    hover: "hover:text-white hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]",
+    hover: "hover:text-slate-800 dark:hover:text-white hover:drop-shadow-[0_0_8px_rgba(0,0,0,0.15)] dark:hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.4)]",
   },
 ];
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col justify-center font-poppins items-center bg-black/30 border-t border-white/5 py-8 px-6 mt-10 text-neutral-400">
+    <footer className="flex flex-col justify-center font-poppins items-center bg-slate-100/50 dark:bg-black/30 border-t border-slate-200/50 dark:border-white/5 py-8 px-6 mt-10 text-slate-500 dark:text-neutral-400 transition-colors duration-300">
       <div className="flex flex-col md:justify-between justify-center items-center w-full max-w-7xl mx-auto md:flex-row space-y-4">
-        <h2 className="tracking-wide text-white font-bold text-xl">
+        <h2 className="tracking-wide text-slate-800 dark:text-white font-bold text-xl">
           Developed with ❤️ by Rohit
         </h2>
         <div className="flex text-xl gap-6">
